@@ -17,46 +17,101 @@ section {
 .card {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   border-radius: 15px;
   background-color: hsl(213, 19%, 18%);
   padding: 30px 10px;
+  margin: 0 2rem;
 }
 
 h1 {
   color: hsl(0, 0%, 100%);
   font-size: 2rem;
+  font-weight: 700;
 }
 
 p {
   color: hsl(217, 12%, 63%);
   font-size: 1rem;
   text-align: left;
+  margin: 0 5px;
 }
-
-/* ul {
-    display: flex;
-    justify-content: space-around;
-    list-style-type: none;
-    border: red 2px solid;
-}
-
-li {
-    border-radius: 50%;
-    border: 1px solid;
-    background-color: blueviolet;
-    height:10px;
-} */
 
 .rate {
   display: flex;
   justify-content: space-around;
+  margin-top: 2rem;
 }
 
 .circle {
+  text-align: center;
   height: 30px;
   width: 30px;
-  background-color: hsl(216, 12%, 54%);
+  background-color: hsl(216deg 8% 28%);
   color: hsl(217, 12%, 63%);
-  border: 1px solid rgba(0, 0, 0, 1);
   border-radius: 50%;
+  line-height: 35px;
 }
+
+.circle:hover {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+  cursor:pointer;
+}
+
+button {
+  display: inline-block;
+  align-self: center;
+  background-color: hsl(25, 97%, 53%);
+  border-radius: 40px;
+  border: 1px solid hsl(213, 19%, 18%);
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+  font-size: 1.75rem;
+  padding: 20px;
+  width: 100%;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-top: 2rem;
+}
+
+button:hover {
+  background-color: hsl(0, 0%, 100%);
+  color:hsl(25, 97%, 53%);
+}
+
+.circle-star {
+  background-color: hsl(216deg 8% 28%);
+  height: 1.875rem;
+  width: 1.875rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.star1 {
+  height: 0;
+  width: 0;
+  border-bottom: 0.625rem solid hsl(25, 97%, 53%);
+  border-left: 0.406rem solid transparent;
+  border-right: 0.406rem solid transparent;
+  position: relative;
+}
+
+.star1::before {
+  position: absolute;
+  content: '';
+  height: 0;
+  width: 0;
+  border-top: 0.625rem solid hsl(25, 97%, 53%);
+  border-left: 0.406rem solid transparent;
+  border-right: 0.406rem solid transparent;
+  top: 0.25rem;
+  left: -0.40rem;
+}
+
+  
