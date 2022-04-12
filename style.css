@@ -93,25 +93,8 @@ button:hover {
   align-items: center;
 }
 
-.star1 {
-  height: 0;
-  width: 0;
-  border-bottom: 0.625rem solid hsl(25, 97%, 53%);
-  border-left: 0.406rem solid transparent;
-  border-right: 0.406rem solid transparent;
-  position: relative;
-}
 
-.star1::before {
-  position: absolute;
-  content: '';
-  height: 0;
-  width: 0;
-  border-top: 0.625rem solid hsl(25, 97%, 53%);
-  border-left: 0.406rem solid transparent;
-  border-right: 0.406rem solid transparent;
-  top: 0.25rem;
-  left: -0.40rem;
-}
+
+
 
   
