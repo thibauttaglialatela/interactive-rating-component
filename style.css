@@ -83,9 +83,14 @@ p, .thanks {
 }
 
 .circle:hover {
-  background-color: hsl(25, 97%, 53%);
+  background-color: hsl(25deg 97%  28%);
   color: hsl(0, 0%, 100%);
   cursor:pointer;
+}
+
+.circle:active {
+  background-color: hsl(25deg 97%  53%);
+  color: hsl(0, 0%, 100%);
 }
 
 button {
