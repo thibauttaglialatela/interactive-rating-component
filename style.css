@@ -137,6 +137,10 @@ button:hover {
   padding: 0 25px;
 }
 
+.attribution {
+  color: whitesmoke;
+}
+
 @media screen and (min-width: 1440px) {
   .card {
     width: 25vw;
