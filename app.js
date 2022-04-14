@@ -9,6 +9,8 @@ rates.forEach((rate) => {
 
 function onClick(e) {
 	let rate = e.currentTarget;
+	rate.style.backgroundColor = 'orange';
+	rate.style.color = 'white';
 	document.querySelector("#rate").innerHTML = rate.innerText;
 }
 
@@ -16,7 +18,5 @@ submit.addEventListener('click', (e) => {
 	console.log('clicking');
 	document.querySelector('.card').style.display = "none";
 	document.querySelector('.thanks-card ').style.display = "flex";
-
-
 })
 
