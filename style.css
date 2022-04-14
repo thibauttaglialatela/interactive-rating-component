@@ -18,12 +18,12 @@ section {
 
 .card {
   display: flex;
+  width: 90vw;
   flex-direction: column;
   justify-content: space-between;
   border-radius: 15px;
   background-color: hsl(213, 19%, 18%);
   padding: 30px 10px;
-  margin: 0 2rem;
 }
 
 .thanks-card {
@@ -128,15 +128,58 @@ button:hover {
 }
 
 .rate-selected {
-  background-color: hsl(216, 12%, 8%);
+  background-color: hsl(216deg 9% 26%);
   border-radius: 40px;
   border: 1px solid hsl(213, 19%, 18%);
-  width: 50vw;
+  width: auto;
+  align-self: center;
+  margin-top: 50px;
+  padding: 0 25px;
+}
+
+@media screen and (min-width: 1440px) {
+  .card {
+    width: 25vw;
+    padding:  40px 50px;
+  }
+  h1 {
+    text-align: left;
+    font-size: 3rem;
+  }
+
+  p {
+    text-align: left;
+    font-size: 1.5rem;
+  }
+
+  .circle {
+  text-align: center;
+  height: 60px;
+  width: 60px;
+  line-height: 63px;
+  font-size: 1.5rem;
+}
+.thanks-card {
+  width: 25vw;
+}
+
+.thanks-card h1 {
+  text-align: center;
+}
+
+.thanks-card p {
+  margin: 0 20px;
+}
+
+.rate-selected {
+  background-color: hsl(216deg 9% 26%);
+  border-radius: 40px;
+  border: 1px solid hsl(213, 19%, 18%);
   align-self: center;
   margin-top: 50px;
 }
 
-
+}
 
 
   
