@@ -15,7 +15,6 @@ function onClick(e) {
 }
 
 submit.addEventListener('click', (e) => {
-	console.log('clicking');
 	document.querySelector('.card').style.display = "none";
 	document.querySelector('.thanks-card ').style.display = "flex";
 })
