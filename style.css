@@ -6,8 +6,8 @@ body {
   font-family: "Overpass", sans-serif;
 }
 
-section {
-  height: 100vh;
+main {
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -27,14 +27,18 @@ section {
 }
 
 .thanks-card {
-  display: none;
   width: 90vw;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
   border-radius: 15px;
   background-color: hsl(213, 19%, 18%);
   padding: 30px 10px;
   margin: 0 2rem;
+}
+
+.hide {
+  display: none;
 }
 
 .thank-you {
@@ -142,11 +146,7 @@ button:hover {
   color: whitesmoke;
 }
 
-<<<<<<< HEAD
 @media screen and (min-width: 376px) {
-=======
-@media screen and (min-width: 1440px) {
->>>>>>> 52bc1a010ab782c95c2ca1e50370b920e5133e60
   .card {
     width: 350px;
     padding:  40px 50px;

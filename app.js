@@ -9,13 +9,13 @@ rates.forEach((rate) => {
 
 function onClick(e) {
 	let rate = e.currentTarget;
-	rate.style.backgroundColor = 'orange';
-	rate.style.color = 'white';
+	rate.style.backgroundColor = 'hsl(25, 97%, 53%)';
+	rate.style.color = '#fff';
 	document.querySelector("#rate").innerHTML = rate.innerText;
 }
 
 submit.addEventListener('click', (e) => {
-	document.querySelector('.card').style.display = "none";
-	document.querySelector('.thanks-card ').style.display = "flex";
+	document.querySelector('.thanks-card').classList.remove('hide');
+	document.querySelector('.card').classList.add('hide');
 })
 
