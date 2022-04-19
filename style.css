@@ -142,7 +142,11 @@ button:hover {
   color: whitesmoke;
 }
 
+<<<<<<< HEAD
 @media screen and (min-width: 376px) {
+=======
+@media screen and (min-width: 1440px) {
+>>>>>>> 52bc1a010ab782c95c2ca1e50370b920e5133e60
   .card {
     width: 350px;
     padding:  40px 50px;
