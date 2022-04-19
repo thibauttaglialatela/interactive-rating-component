@@ -28,6 +28,7 @@ section {
 
 .thanks-card {
   display: none;
+  width: 90vw;
   flex-direction: column;
   justify-content: space-between;
   border-radius: 15px;
@@ -141,9 +142,9 @@ button:hover {
   color: whitesmoke;
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 376px) {
   .card {
-    width: 25vw;
+    width: 350px;
     padding:  40px 50px;
   }
   h1 {
@@ -164,7 +165,7 @@ button:hover {
   font-size: 1.5rem;
 }
 .thanks-card {
-  width: 25vw;
+  width: 350px;
 }
 
 .thanks-card h1 {
